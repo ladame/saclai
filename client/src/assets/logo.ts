@@ -1,3 +1,3 @@
-// This file ensures the logo is properly imported in components
-const logoUrl = '/images/saclai-logo-transparent.png';
+// Import the logo directly
+import logoUrl from './logo.png';
 export default logoUrl;

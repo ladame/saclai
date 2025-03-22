@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-1">
             <div className="mb-4">
-              <span className="text-white font-sans font-bold text-2xl">Saclai</span>
+              <img src="/images/saclai-logo.svg" alt="Saclai Logo" className="h-10 brightness-200" />
             </div>
             <p className="mb-4 text-gray-400">Empowering business students with an AI and international mindset.</p>
             <div className="flex space-x-4">

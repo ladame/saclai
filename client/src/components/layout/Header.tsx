@@ -28,9 +28,9 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link href="/">
-              <a className="flex items-center">
+              <div className="flex items-center">
                 <img src="/images/saclai-logo.png" alt="Saclai Logo" className="h-10" />
-              </a>
+              </div>
             </Link>
           </div>
           
@@ -38,9 +38,9 @@ const Header = () => {
           <nav className="hidden md:flex space-x-8">
             {NAVLINKS.map((link) => (
               <Link key={link.path} href={link.path}>
-                <a className={`font-medium ${location === link.path ? 'text-gray-800' : 'text-gray-500'} hover:text-primary transition-colors font-sans`}>
+                <div className={`font-medium ${location === link.path ? 'text-gray-800' : 'text-gray-500'} hover:text-primary transition-colors font-sans cursor-pointer`}>
                   {link.title}
-                </a>
+                </div>
               </Link>
             ))}
           </nav>
@@ -74,9 +74,9 @@ const Header = () => {
             <div className="flex flex-col space-y-3">
               {NAVLINKS.map((link) => (
                 <Link key={link.path} href={link.path}>
-                  <a className={`font-medium px-3 py-2 rounded-md ${location === link.path ? 'text-gray-800 bg-gray-100' : 'text-gray-500 hover:bg-gray-100 hover:text-gray-800'} font-sans`}>
+                  <div className={`font-medium px-3 py-2 rounded-md ${location === link.path ? 'text-gray-800 bg-gray-100' : 'text-gray-500 hover:bg-gray-100 hover:text-gray-800'} font-sans cursor-pointer`}>
                     {link.title}
-                  </a>
+                  </div>
                 </Link>
               ))}
               <div className="pt-2 flex flex-col space-y-3">

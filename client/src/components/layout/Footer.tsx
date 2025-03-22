@@ -40,9 +40,9 @@ const Footer = () => {
               {NAVLINKS.map((link) => (
                 <li key={link.path}>
                   <Link href={link.path}>
-                    <a className="text-gray-400 hover:text-white transition-colors">
+                    <div className="text-gray-400 hover:text-white transition-colors cursor-pointer">
                       {link.title}
-                    </a>
+                    </div>
                   </Link>
                 </li>
               ))}
@@ -56,9 +56,9 @@ const Footer = () => {
               {COURSES.slice(0, 4).map((course) => (
                 <li key={course.id}>
                   <Link href={`/courses#${course.id}`}>
-                    <a className="text-gray-400 hover:text-white transition-colors">
+                    <div className="text-gray-400 hover:text-white transition-colors cursor-pointer">
                       {course.title}
-                    </a>
+                    </div>
                   </Link>
                 </li>
               ))}

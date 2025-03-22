@@ -1,0 +1,35 @@
+Create a full responsive React.js website for Saclai, an edtech company that partners with business schools to deliver future-ready courses in AI, international business strategy, supply chain automation (Excel/VBA), and machine learning for non-technical students.
+The target audience is academic institutions, especially business and supply chain departments.
+
+Pages to include:
+	1.	Home Page –
+Hero section with headline:
+“Empowering Business Students with an AI and International Mindset”
+Subheading:
+“Saclai designs hands-on, forward-looking courses that blend artificial intelligence, global strategy, and business fundamentals—preparing your students to lead in tomorrow’s world.”
+Two CTA buttons: “Explore Our Courses” and “Book a Strategy Call”.
+Include visual on the right side (globe, AI, or business illustration).
+Below that, add sections like:
+
+	•	“Why Choose Saclai?” (AI-first + international focus + real-world learning)
+	•	“Featured Courses” (Cards or tiles for AI for Business, VBA in Supply Chain, etc.)
+	•	“Trusted by Institutions” (logo placeholders)
+	•	Testimonials
+	•	Footer with contact & social links
+	2.	About Page –
+Explain Saclai’s vision: helping institutions equip students with practical AI skills and a global mindset. Mention that all courses involve real-world AI tools or international case studies.
+	3.	Courses Page –
+Show course cards or list grouped into categories (AI for Business, Supply Chain Automation, Global Strategy). Each course card should have a title, short description, and “Learn More” button.
+	4.	Contact Page –
+Form for institutions to request a demo or call. Fields: Name, Institution, Email, Message.
+
+⸻
+
+Technical Requirements:
+	•	Use React.js functional components
+	•	Use CSS Modules or Styled Components for styling (no Bootstrap or external frameworks)
+	•	Ensure it’s fully responsive
+	•	Use React Router for page navigation
+	•	Include reusable components (e.g. Header, Footer, CourseCard)
+	•	Use clean layout, modern fonts (like Inter, Open Sans, or Lato)
+	•	Keep code modular and commented for easy updates later

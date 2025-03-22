@@ -60,6 +60,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'nav.language': 'Language',
     'nav.language.en': 'English',
     'nav.language.fr': 'French',
+    'nav.login': 'Log In',
+    'nav.partner': 'Partner with Us',
 
     // Home page
     'home.hero.title': 'Empower Your Business Skills',
@@ -165,6 +167,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'nav.language': 'Langue',
     'nav.language.en': 'Anglais',
     'nav.language.fr': 'Français',
+    'nav.login': 'Connexion',
+    'nav.partner': 'Devenez Partenaire',
 
     // Home page
     'home.hero.title': 'Développez Vos Compétences Professionnelles',

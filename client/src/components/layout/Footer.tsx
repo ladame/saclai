@@ -9,8 +9,17 @@ import {
   MapPin 
 } from 'lucide-react';
 import logoUrl from '@/assets/logo';
+import { useLanguage } from '@/context/LanguageContext';
 
 const Footer = () => {
+  const { t } = useLanguage();
+
+  // Translated nav links
+  const translatedNavLinks = NAVLINKS.map(link => ({
+    ...link,
+    title: t(`nav.${link.title.toLowerCase()}`)
+  }));
+
   return (
     <footer className="bg-gray-800 text-gray-300 py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,13 +31,13 @@ const Footer = () => {
             </div>
             <p className="mb-4 text-gray-400">Empowering business students with an AI and international mindset.</p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
                 <Instagram size={20} />
               </a>
             </div>
@@ -36,9 +45,9 @@ const Footer = () => {
           
           {/* Quick Links */}
           <div>
-            <h3 className="font-sans font-semibold text-white mb-4">Quick Links</h3>
+            <h3 className="font-sans font-semibold text-white mb-4">{t('footer.resources')}</h3>
             <ul className="space-y-2">
-              {NAVLINKS.map((link) => (
+              {translatedNavLinks.map((link) => (
                 <li key={link.path}>
                   <Link href={link.path}>
                     <div className="text-gray-400 hover:text-white transition-colors cursor-pointer">
@@ -52,7 +61,7 @@ const Footer = () => {
           
           {/* Courses */}
           <div>
-            <h3 className="font-sans font-semibold text-white mb-4">Our Courses</h3>
+            <h3 className="font-sans font-semibold text-white mb-4">{t('footer.courses')}</h3>
             <ul className="space-y-2">
               {COURSES.slice(0, 4).map((course) => (
                 <li key={course.id}>
@@ -68,7 +77,7 @@ const Footer = () => {
           
           {/* Contact */}
           <div>
-            <h3 className="font-sans font-semibold text-white mb-4">Contact Us</h3>
+            <h3 className="font-sans font-semibold text-white mb-4">{t('footer.contact')}</h3>
             <ul className="space-y-2">
               <li className="flex items-start">
                 <Mail className="mt-1.5 mr-2 text-primary/80" size={16} />
@@ -87,10 +96,10 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Saclai Education. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Saclai Education. {t('footer.rights')}</p>
           <div className="mt-4 md:mt-0 flex space-x-6">
-            <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">Privacy Policy</a>
-            <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">Terms of Service</a>
+            <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">{t('footer.privacy')}</a>
+            <a href="#" className="text-gray-500 hover:text-gray-300 text-sm">{t('footer.terms')}</a>
           </div>
         </div>
       </div>

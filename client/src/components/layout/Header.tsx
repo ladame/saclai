@@ -4,11 +4,14 @@ import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { NAVLINKS } from '@/lib/constants';
 import logoUrl from '@/assets/logo';
+import { useLanguage } from '@/context/LanguageContext';
+import LanguageSwitcher from '@/components/common/LanguageSwitcher';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [location] = useLocation();
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +25,12 @@ const Header = () => {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
+  // Translated nav links
+  const translatedNavLinks = NAVLINKS.map(link => ({
+    ...link,
+    title: t(`nav.${link.title.toLowerCase()}`)
+  }));
 
   return (
     <header className={`sticky top-0 bg-white z-50 transition-all duration-300 ${isScrolled ? 'shadow py-2' : 'py-4 shadow-sm'}`}>
@@ -37,7 +46,7 @@ const Header = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {NAVLINKS.map((link) => (
+            {translatedNavLinks.map((link) => (
               <Link key={link.path} href={link.path}>
                 <div className={`font-medium ${location === link.path ? 'text-gray-800' : 'text-gray-500'} hover:text-primary transition-colors font-sans cursor-pointer`}>
                   {link.title}
@@ -47,11 +56,12 @@ const Header = () => {
           </nav>
           
           <div className="hidden md:flex items-center space-x-4">
+            <LanguageSwitcher />
             <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
-              Log In
+              {t('nav.login')}
             </Button>
             <Button className="bg-primary text-white hover:bg-primary/90">
-              Partner with Us
+              {t('nav.partner')}
             </Button>
           </div>
           
@@ -73,7 +83,7 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden pt-4 pb-4">
             <div className="flex flex-col space-y-3">
-              {NAVLINKS.map((link) => (
+              {translatedNavLinks.map((link) => (
                 <Link key={link.path} href={link.path}>
                   <div className={`font-medium px-3 py-2 rounded-md ${location === link.path ? 'text-gray-800 bg-gray-100' : 'text-gray-500 hover:bg-gray-100 hover:text-gray-800'} font-sans cursor-pointer`}>
                     {link.title}
@@ -81,11 +91,12 @@ const Header = () => {
                 </Link>
               ))}
               <div className="pt-2 flex flex-col space-y-3">
+                <LanguageSwitcher />
                 <Button variant="outline" className="w-full border-primary text-primary">
-                  Log In
+                  {t('nav.login')}
                 </Button>
                 <Button className="w-full bg-primary text-white">
-                  Partner with Us
+                  {t('nav.partner')}
                 </Button>
               </div>
             </div>

@@ -29,7 +29,7 @@ const Header = () => {
           <div className="flex items-center">
             <Link href="/">
               <a className="flex items-center">
-                <img src="/images/saclai-logo.svg" alt="Saclai Logo" className="h-10" />
+                <img src="/images/saclai-logo.png" alt="Saclai Logo" className="h-10" />
               </a>
             </Link>
           </div>

@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-1">
             <div className="mb-4">
-              <img src="/saclai-logo.png" alt="Saclai Logo" className="h-10 brightness-0 invert" />
+              <img src="/saclai-logo-transparent.png" alt="Saclai Logo" className="h-10 brightness-0 invert" />
             </div>
             <p className="mb-4 text-gray-400">Empowering business students with an AI and international mindset.</p>
             <div className="flex space-x-4">

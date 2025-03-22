@@ -3,6 +3,7 @@ import { Link, useLocation } from 'wouter';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { NAVLINKS } from '@/lib/constants';
+import logoUrl from '@/assets/logo';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,7 +30,7 @@ const Header = () => {
           <div className="flex items-center">
             <Link href="/">
               <div className="flex items-center">
-                <img src="/images/saclai-logo-transparent.png" alt="Saclai Logo" className="h-10" />
+                <img src={logoUrl} alt="Saclai Logo" className="h-10" />
               </div>
             </Link>
           </div>

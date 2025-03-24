@@ -32,8 +32,12 @@ const TestimonialsSection = () => {
                       />
                     </div>
                     <div className="text-center">
-                      <h4 className="font-sans font-semibold text-gray-900">{testimonial.name}</h4>
-                      <p className="text-sm text-gray-500">{testimonial.role}</p>
+                      <h4 className="font-sans font-semibold text-gray-900">
+                        {t(`testimonials.${testimonial.id}.name`) || testimonial.name}
+                      </h4>
+                      <p className="text-sm text-gray-500">
+                        {t(`testimonials.${testimonial.id}.role`) || testimonial.role}
+                      </p>
                     </div>
                   </div>
                   <div className="md:w-3/4">
@@ -43,9 +47,11 @@ const TestimonialsSection = () => {
                       ))}
                     </div>
                     <blockquote className="text-gray-600 italic mb-4">
-                      "{testimonial.quote}"
+                      "{t(`testimonials.${testimonial.id}.quote`) || testimonial.quote}"
                     </blockquote>
-                    <p className="text-sm text-gray-500">{testimonial.institution}</p>
+                    <p className="text-sm text-gray-500">
+                      {t(`testimonials.${testimonial.id}.institution`) || testimonial.institution}
+                    </p>
                   </div>
                 </div>
               </div>

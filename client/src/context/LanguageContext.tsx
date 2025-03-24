@@ -84,6 +84,22 @@ export const translations: Record<Language, Record<string, string>> = {
 
     'home.testimonials.title': 'What Our Students Say',
     'home.testimonials.subtitle': 'Success stories from professionals who transformed their careers',
+    
+    // Testimonials
+    'testimonials.sarah-johnson.name': 'Sarah Johnson',
+    'testimonials.sarah-johnson.role': 'Director of Operations',
+    'testimonials.sarah-johnson.institution': 'Paris Business School',
+    'testimonials.sarah-johnson.quote': 'Saclai\'s courses have transformed our business curriculum. Our students are now gaining practical AI skills that truly prepare them for the modern job market.',
+    
+    'testimonials.michael-wong.name': 'Michael Wong',
+    'testimonials.michael-wong.role': 'Associate Professor',
+    'testimonials.michael-wong.institution': 'Lyon School of Business',
+    'testimonials.michael-wong.quote': 'Saclai\'s teaching approach is exceptional. They created a data analytics course perfectly tailored to our non-technical students, which achieved a 98% satisfaction rate.',
+    
+    'testimonials.james-peterson.name': 'James Peterson',
+    'testimonials.james-peterson.role': 'Dean',
+    'testimonials.james-peterson.institution': 'University of Bordeaux',
+    'testimonials.james-peterson.quote': 'Our partnership with Saclai has enabled us to offer cutting-edge training in business-applied AI. Their courses are constantly updated to reflect the latest industry trends.',
 
     'home.trusted.title': 'Trusted By',
     'home.trusted.subtitle': 'Leading companies and institutions that partner with us',
@@ -233,6 +249,22 @@ export const translations: Record<Language, Record<string, string>> = {
 
     'home.testimonials.title': 'Ce Que Disent Nos Étudiants',
     'home.testimonials.subtitle': 'Histoires de réussite de professionnels qui ont transformé leur carrière',
+    
+    // Testimonials
+    'testimonials.sarah-johnson.name': 'Sarah Johnson',
+    'testimonials.sarah-johnson.role': 'Directrice des Opérations',
+    'testimonials.sarah-johnson.institution': 'Université de Paris Business School',
+    'testimonials.sarah-johnson.quote': 'Les cours de Saclai ont transformé notre programme d\'études commerciales. Nos étudiants acquièrent désormais des compétences pratiques en IA qui les préparent réellement au marché du travail moderne.',
+    
+    'testimonials.michael-wong.name': 'Michael Wong',
+    'testimonials.michael-wong.role': 'Professeur Associé',
+    'testimonials.michael-wong.institution': 'École de Commerce de Lyon',
+    'testimonials.michael-wong.quote': 'L\'approche pédagogique de Saclai est exceptionnelle. Ils ont créé un cours d\'analyse des données parfaitement adapté à nos étudiants non techniques, qui a connu un taux de satisfaction de 98%.',
+    
+    'testimonials.james-peterson.name': 'James Peterson',
+    'testimonials.james-peterson.role': 'Doyen',
+    'testimonials.james-peterson.institution': 'Université de Bordeaux',
+    'testimonials.james-peterson.quote': 'Notre partenariat avec Saclai nous a permis d\'offrir une formation de pointe en IA appliquée aux affaires. Leurs cours sont constamment mis à jour pour refléter les dernières tendances de l\'industrie.',
 
     'home.trusted.title': 'Partenaires de Confiance',
     'home.trusted.subtitle': 'Entreprises et institutions leaders qui collaborent avec nous',

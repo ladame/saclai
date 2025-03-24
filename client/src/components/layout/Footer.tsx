@@ -29,7 +29,7 @@ const Footer = () => {
             <div className="mb-4">
               <img src={logoUrl} alt="Saclai Logo" className="h-10 brightness-0 invert" />
             </div>
-            <p className="mb-4 text-gray-400">Empowering business students with an AI and international mindset.</p>
+            <p className="mb-4 text-gray-400">{t('footer.company.description')}</p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
                 <Linkedin size={20} />
@@ -67,7 +67,7 @@ const Footer = () => {
                 <li key={course.id}>
                   <Link href={`/courses#${course.id}`}>
                     <div className="text-gray-400 hover:text-white transition-colors cursor-pointer">
-                      {course.title}
+                      {t(`courses.${course.id}.title`) || course.title}
                     </div>
                   </Link>
                 </li>

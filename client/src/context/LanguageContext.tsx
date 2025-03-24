@@ -179,6 +179,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'footer.newsletter.placeholder': 'Your email address',
     'footer.newsletter.button': 'Subscribe',
     'footer.social': 'Follow Us',
+    'footer.company.description': 'Empowering business students with an AI and international mindset.',
 
     'course.duration': 'Duration',
     'course.category': 'Category',
@@ -344,6 +345,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'footer.newsletter.placeholder': 'Votre adresse email',
     'footer.newsletter.button': 'S\'abonner',
     'footer.social': 'Suivez-Nous',
+    'footer.company.description': 'Former les étudiants en commerce avec une vision axée sur l\'IA et l\'international.',
 
     'course.duration': 'Durée',
     'course.category': 'Catégorie',

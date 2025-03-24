@@ -167,6 +167,38 @@ export const translations: Record<Language, Record<string, string>> = {
     'course.duration': 'Duration',
     'course.category': 'Category',
     'course.details': 'View Details',
+    
+    // Course categories
+    'courses.categories.ai-&-machine-learning': 'AI & Machine Learning',
+    'courses.categories.supply-chain': 'Supply Chain',
+    'courses.categories.global-business': 'Global Business',
+    'courses.categories.marketing-&-ai': 'Marketing & AI',
+    'courses.categories.business-analytics': 'Business Analytics',
+    
+    // Course titles and descriptions
+    'courses.ai-business.title': 'AI for Business Decision Making',
+    'courses.ai-business.description': 'Students learn to leverage AI tools for enhanced business strategy, predictive analytics, and decision support.',
+    'courses.ai-business.duration': '8-week course',
+    
+    'courses.supply-chain.title': 'Supply Chain Automation with Excel/VBA',
+    'courses.supply-chain.description': 'Practical skills in automating supply chain processes using Excel and VBA for increased efficiency and analysis.',
+    'courses.supply-chain.duration': '6-week course',
+    
+    'courses.international-business.title': 'International Business Strategy',
+    'courses.international-business.description': 'Develop cross-cultural business acumen and learn to navigate global markets with real-world case studies.',
+    'courses.international-business.duration': '10-week course',
+    
+    'courses.ml-nontechnical.title': 'Machine Learning for Non-Technical Students',
+    'courses.ml-nontechnical.description': 'A beginner-friendly introduction to machine learning concepts and applications in business contexts.',
+    'courses.ml-nontechnical.duration': '8-week course',
+    
+    'courses.global-marketing.title': 'Global Marketing in the AI Era',
+    'courses.global-marketing.description': 'Explore how AI is transforming international marketing strategies and customer engagement.',
+    'courses.global-marketing.duration': '7-week course',
+    
+    'courses.excel-business.title': 'Advanced Excel for Business Analysis',
+    'courses.excel-business.description': 'Master complex Excel functions and tools for powerful business data analysis and visualization.',
+    'courses.excel-business.duration': '5-week course',
   },
   fr: {
     // Navigation
@@ -249,10 +281,16 @@ export const translations: Record<Language, Record<string, string>> = {
     'contact.hero.subtitle': 'Nous serions ravis d\'avoir de vos nouvelles',
     'contact.form.name': 'Votre Nom',
     'contact.form.email': 'Adresse Email',
+    'contact.form.emailPlaceholder': 'votre.email@institution.edu',
+    'contact.form.institution': 'Institution',
+    'contact.form.institutionPlaceholder': 'Votre institution',
     'contact.form.subject': 'Sujet',
     'contact.form.message': 'Votre Message',
+    'contact.form.messagePlaceholder': 'Parlez-nous de vos besoins...',
+    'contact.form.submitting': 'Envoi en cours...',
     'contact.form.submit': 'Envoyer le Message',
-    'contact.form.success': 'Votre message a été envoyé avec succès!',
+    'contact.form.success.title': 'Demande soumise!',
+    'contact.form.success.description': 'Nous vous contacterons bientôt pour planifier un appel stratégique.',
     'contact.form.error': 'Une erreur s\'est produite lors de l\'envoi de votre message. Veuillez réessayer.',
     'contact.info.title': 'Prenez Contact',
     'contact.info.description': 'Vous avez des questions sur nos cours ou partenariats? Contactez notre équipe.',
@@ -278,5 +316,37 @@ export const translations: Record<Language, Record<string, string>> = {
     'course.duration': 'Durée',
     'course.category': 'Catégorie',
     'course.details': 'Voir les Détails',
+    
+    // Course categories
+    'courses.categories.ai-&-machine-learning': 'IA et Apprentissage Automatique',
+    'courses.categories.supply-chain': 'Chaîne d\'Approvisionnement',
+    'courses.categories.global-business': 'Commerce International',
+    'courses.categories.marketing-&-ai': 'Marketing et IA',
+    'courses.categories.business-analytics': 'Analyse d\'Affaires',
+    
+    // Course titles and descriptions
+    'courses.ai-business.title': 'L\'IA pour la Prise de Décision en Entreprise',
+    'courses.ai-business.description': 'Les étudiants apprennent à utiliser les outils d\'IA pour améliorer la stratégie d\'entreprise, l\'analyse prédictive et l\'aide à la décision.',
+    'courses.ai-business.duration': 'Cours de 8 semaines',
+    
+    'courses.supply-chain.title': 'Automatisation de la Chaîne d\'Approvisionnement avec Excel/VBA',
+    'courses.supply-chain.description': 'Compétences pratiques en automatisation des processus de la chaîne d\'approvisionnement à l\'aide d\'Excel et VBA pour une efficacité et une analyse accrues.',
+    'courses.supply-chain.duration': 'Cours de 6 semaines',
+    
+    'courses.international-business.title': 'Stratégie de Commerce International',
+    'courses.international-business.description': 'Développez une expertise commerciale interculturelle et apprenez à naviguer sur les marchés mondiaux grâce à des études de cas réels.',
+    'courses.international-business.duration': 'Cours de 10 semaines',
+    
+    'courses.ml-nontechnical.title': 'Apprentissage Automatique pour Étudiants Non Techniques',
+    'courses.ml-nontechnical.description': 'Une introduction conviviale aux concepts d\'apprentissage automatique et à leurs applications dans les contextes commerciaux.',
+    'courses.ml-nontechnical.duration': 'Cours de 8 semaines',
+    
+    'courses.global-marketing.title': 'Marketing Mondial à l\'Ère de l\'IA',
+    'courses.global-marketing.description': 'Explorez comment l\'IA transforme les stratégies de marketing international et l\'engagement client.',
+    'courses.global-marketing.duration': 'Cours de 7 semaines',
+    
+    'courses.excel-business.title': 'Excel Avancé pour l\'Analyse d\'Affaires',
+    'courses.excel-business.description': 'Maîtrisez les fonctions et outils complexes d\'Excel pour une analyse et une visualisation puissantes des données commerciales.',
+    'courses.excel-business.duration': 'Cours de 5 semaines',
   }
 };

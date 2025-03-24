@@ -29,24 +29,26 @@ const CourseCard = ({ course }: CourseCardProps) => {
     <div id={course.id} className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
       <div className={`h-48 ${course.backgroundColor} relative`}>
         <div className="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-30">
-          <h3 className="font-sans font-bold text-white text-xl px-4 text-center">{course.title}</h3>
+          <h3 className="font-sans font-bold text-white text-xl px-4 text-center">
+            {t(`courses.${course.id}.title`) || course.title}
+          </h3>
         </div>
         <img 
           src={course.imageUrl} 
-          alt={`${course.title} course`} 
+          alt={`${t(`courses.${course.id}.title`) || course.title} course`} 
           className="w-full h-full object-cover"
         />
       </div>
       <div className="p-6">
         <div className="flex items-center space-x-2 mb-3">
           <span className={`px-3 py-1 ${getCategoryColorClass(course.categoryColor)} rounded-full text-xs font-semibold`}>
-            {course.category}
+            {t(`courses.categories.${course.category.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-')}`) || course.category}
           </span>
         </div>
-        <p className="text-gray-600 mb-4">{course.description}</p>
+        <p className="text-gray-600 mb-4">{t(`courses.${course.id}.description`) || course.description}</p>
         <div className="flex items-center justify-between">
           <span className="text-sm text-gray-500">
-            <span className="font-medium">{t('course.duration')}:</span> {course.duration}
+            <span className="font-medium">{t('course.duration')}:</span> {t(`courses.${course.id}.duration`) || course.duration}
           </span>
           <a href="#" className="text-primary font-medium text-sm hover:text-primary/80">
             {t('course.details')} →

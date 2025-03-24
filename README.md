@@ -27,7 +27,7 @@ A cutting-edge edtech platform designed for Saclai, a company that partners with
 
 1. Clone the repository:
    ```
-   git clone https://github.com/username/saclai.git
+   git clone https://github.com/ladame/saclai.git
    cd saclai
    ```
 

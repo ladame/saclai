@@ -1,16 +1,18 @@
 import { useState } from 'react';
 import { TESTIMONIALS } from '@/lib/constants';
 import { Star } from 'lucide-react';
+import { useLanguage } from '@/context/LanguageContext';
 
 const TestimonialsSection = () => {
+  const { t } = useLanguage();
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <section className="py-16 bg-gradient-to-br from-primary/5 to-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="font-sans font-bold text-3xl text-gray-900 mb-4">What Educators Are Saying</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">Hear from our partners about how Saclai has transformed their business curriculum.</p>
+          <h2 className="font-sans font-bold text-3xl text-gray-900 mb-4">{t('home.testimonials.title')}</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">{t('home.testimonials.subtitle')}</p>
         </div>
         
         <div className="max-w-4xl mx-auto">

@@ -1,10 +1,13 @@
 import { PARTNERS } from '@/lib/constants';
+import { useLanguage } from '@/context/LanguageContext';
 
 const TrustedBySection = () => {
+  const { t } = useLanguage();
+  
   return (
     <section className="py-12 bg-white border-t border-gray-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center font-sans font-semibold text-xl text-gray-500 mb-8">Trusted by Leading Business Schools</h2>
+        <h2 className="text-center font-sans font-semibold text-xl text-gray-500 mb-8">{t('home.trusted.title')}</h2>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
           {PARTNERS.map((partner) => (

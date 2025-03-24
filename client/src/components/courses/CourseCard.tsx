@@ -1,10 +1,13 @@
 import { Course } from '@/lib/constants';
+import { useLanguage } from '@/context/LanguageContext';
 
 interface CourseCardProps {
   course: Course;
 }
 
 const CourseCard = ({ course }: CourseCardProps) => {
+  const { t } = useLanguage();
+  
   const getCategoryColorClass = (category: string) => {
     switch (category) {
       case 'primary':
@@ -42,8 +45,12 @@ const CourseCard = ({ course }: CourseCardProps) => {
         </div>
         <p className="text-gray-600 mb-4">{course.description}</p>
         <div className="flex items-center justify-between">
-          <span className="text-sm text-gray-500">{course.duration}</span>
-          <a href="#" className="text-primary font-medium text-sm hover:text-primary/80">Learn More →</a>
+          <span className="text-sm text-gray-500">
+            <span className="font-medium">{t('course.duration')}:</span> {course.duration}
+          </span>
+          <a href="#" className="text-primary font-medium text-sm hover:text-primary/80">
+            {t('course.details')} →
+          </a>
         </div>
       </div>
     </div>
